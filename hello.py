@@ -1,5 +1,5 @@
 def toyou(x):
-    return "hello form HCM123" % x
+    return "hello form HCM" % x
 
 
 def add(x):
