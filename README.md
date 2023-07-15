@@ -1,6 +1,6 @@
 # Overview
 
-Hello, I am Khuong, this is project 2 (CICD) in Nanodegree for DevOps Engineer using MS Azure from Udacity.
+Hello, I am huy, this is project 2 (CICD) in Nanodegree for DevOps Engineer using MS Azure from Udacity.
 
 This project consists of flask application that is developed to predict housing prices in Boston (the model is already created by the instructor). 
 
@@ -12,11 +12,11 @@ If anything changed in it repository,  it will trigger the Github Action and als
 
 ## Badge
 
-[![Python application test with Github Actions](https://github.com/phkhuong2/azure-devops-project2.1/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/phkhuong2/azure-devops-project2.1/actions/workflows/pythonapp.yml)
+[![Python application test with Github Actions](https://github.com/tuanhuy33/azure-devops-project2.1/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/tuanhuy33/azure-devops-project2.1/actions/workflows/pythonapp.yml)
 
 ## Project Plan
 
-A [Trello](https://trello.com/b/3YsyayTe/build-cicd-pipeline-for-azure-devops) board to keep track of the tasks.
+A [Trello](https://trello.com/invite/b/u1T4UgNP/ATTI359c6c9fd0512a2b642617ff36974207E886B257/huy-bui) board to keep track of the tasks.
 
 A [spreadsheet](project-schedule-h.xlsx) to manage the project plan.
 
@@ -30,7 +30,7 @@ Here is an architectural diagram:
 
 In Azure Cloud Shell, clone the repo:
 ```
-git clone git@github.com:phkhuong2/azure-devops-project2.1.git
+git clone git@github.com:tuanhuy33/azure-devops-project2.1.git
 ```
 ![screenshot-gitClone-AzureCloud](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/git_clone.png)
 
@@ -107,7 +107,7 @@ View the app logs:
 
 To view the log in Cloud Shell
 ```
-az webapp log tail -g Azuredevops -n azure-devops-project2-khuongph
+az webapp log tail -g Azuredevops -n azure-devops-project2-huy
 ```
 ![screenshot-log-webapp](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/log_trail.png)
 
@@ -125,7 +125,7 @@ pip install locust
 
 Start load test:
 ```
-locust -f locustfile.py --host https://azure-devops-project2-khuongph.azurewebsites.net/ --users 500 --spawn-rate 5 
+locust -f locustfile.py --host https://azure-devops-project2-huy.azurewebsites.net/ --users 500 --spawn-rate 5 
 ```
 Open a browser and go to [http://localhost:8089](http://localhost:8089) then click Start Swarming:
 
@@ -140,4 +140,4 @@ Open a browser and go to [http://localhost:8089](http://localhost:8089) then cli
 
 ## Demo 
 Demo Video on Youtube 
-https://www.youtube.com/watch?v=yHDnCFm9pww&ab_channel=khuonghoang
+
