@@ -12,11 +12,11 @@ If anything changed in it repository,  it will trigger the Github Action and als
 
 ## Badge
 
-[![Python application test with Github Actions](https://github.com/phkhuong2/azure-devops-project2.1/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/phkhuong2/azure-devops-project2.1/actions/workflows/pythonapp.yml)
+[![Python application test with Github Actions](https://github.com/tuanhuy33/azure-devops-project2.1/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/tuanhuy33/azure-devops-project2.1/actions/workflows/pythonapp.yml)
 
 ## Project Plan
 
-A [Trello](https://trello.com/b/3YsyayTe/build-cicd-pipeline-for-azure-devops) board to keep track of the tasks.
+A [Trello](https://trello.com/invite/b/u1T4UgNP/ATTI359c6c9fd0512a2b642617ff36974207E886B257/huy-bui) board to keep track of the tasks.
 
 A [spreadsheet](project-schedule-h.xlsx) to manage the project plan.
 
