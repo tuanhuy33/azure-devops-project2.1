@@ -11,14 +11,14 @@ variables:
   azureServiceConnectionId: '27e8ccef-3336-4226-976e-50ebfdb811bf'
 
   # Web app name
-  webAppName: 'azure-devops-project2-khuongph'
+  webAppName: 'azure-devops-project2-huyph'
 
-  poolName: 'khuongPool'
+  poolName: 'huyPool'
   # Agent VM image name
-  vmImageName: 'khuongVM'
+  vmImageName: 'huyVM'
 
   # Environment name
-  environmentName: 'khuongEnv'
+  environmentName: 'huyEnv'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -83,7 +83,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : azure-devops-project2-khuongph'
+            displayName: 'Deploy Azure Web App : azure-devops-project2-huyph'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
