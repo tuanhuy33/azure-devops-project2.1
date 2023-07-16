@@ -24,7 +24,7 @@ A [spreadsheet](project-schedule-h.xlsx) to manage the project plan.
 
 Here is an architectural diagram:
 
-![diagram](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/diagram.png)
+![diagram](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/a.png)
 
 ## Deploy the app in Azure Cloud Shell
 
@@ -32,7 +32,7 @@ In Azure Cloud Shell, clone the repo:
 ```
 git clone git@github.com:tuanhuy33/azure-devops-project2.1.git
 ```
-![screenshot-gitClone-AzureCloud](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/git_clone.png)
+![screenshot-gitClone-AzureCloud](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/ssh-clone.png)
 
 
 Change into the new directory:
@@ -60,16 +60,16 @@ Install dependencies in the virtual environment and run tests:
 ```
 make all
 ```
-![make-all](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/run_make_all_local.png)
+![make-all](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/python3.png)
 
 Make change and test GitHub action
-![screenshot-test-githubaction](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/test_github_action.png)
+![screenshot-test-githubaction](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/git_action.png)
 
 ## Deploy the app to an Azure App Service
 
 Create an App Service in Azure. 
 
-Use this [file](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/commands.sh) to create new App Services
+Use this [file](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/commands.sh) to create new App Services
 
 ```
 az webapp up -n azure-devops-project2
@@ -84,11 +84,11 @@ Next, create the pipeline in Azure DevOps. The basic steps are:
 
 Screenshot of the App Service:
 
-![My WebApp](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/azure_web_app.png)
+![My WebApp](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/web_app.png)
 
 Screenshot of Azure DevOps Project:
 
-![My_DevOps](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/my_devops.png)
+![My_DevOps](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/azure_devops..png)
 
 To test the app running in Azure App Service, edit line 28 of the make_predict_azure_app.sh script with the DNS name of your app. Then run the script:
 ```
@@ -97,11 +97,11 @@ To test the app running in Azure App Service, edit line 28 of the make_predict_a
 
 If it's working you should see the following output:
 
-![screenshot-prediction](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/06%20-%20make%20prediction.jpg)
+![screenshot-prediction](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/b.png)
 
 You can also visit the URL of the App Service via the browser and you should see the following page:
 
-![screenshot-browser](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/app.png)
+![screenshot-browser](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/app.png)
 
 View the app logs:
 
@@ -109,7 +109,7 @@ To view the log in Cloud Shell
 ```
 az webapp log tail -g Azuredevops -n azure-devops-project2-huy
 ```
-![screenshot-log-webapp](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/log_trail.png)
+![screenshot-log-webapp](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/log_trail.png)
 
 
 > 
@@ -129,9 +129,9 @@ locust -f locustfile.py --host https://azure-devops-project2-huy.azurewebsites.n
 ```
 Open a browser and go to [http://localhost:8089](http://localhost:8089) then click Start Swarming:
 
-![screenshot-loadtest#1](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/loadtest1.png)
-![screenshot-loadtest#2](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/loadtest2.png)
-![screenshot-loadtest#3](https://github.com/phkhuong2/azure-devops-project2.1/blob/main/screenshots/loadtest3.png)
+![screenshot-loadtest#1](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/run_locust.png)
+![screenshot-loadtest#2](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/locust_localhost.png)
+![screenshot-loadtest#3](https://github.com/tuanhuy33/azure-devops-project2.1/blob/main/image/chart_locust.png)
 
 ## Future Enhancements
 - Creating a UI for making predictions.
@@ -139,5 +139,5 @@ Open a browser and go to [http://localhost:8089](http://localhost:8089) then cli
 - Deploying my app with AKS.
 
 ## Demo 
-Demo Video on Youtube 
+Demo Video on Youtube:https://www.youtube.com/watch?v=IdL-hjWad_I
 
