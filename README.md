@@ -139,5 +139,5 @@ Open a browser and go to [http://localhost:8089](http://localhost:8089) then cli
 - Deploying my app with AKS.
 
 ## Demo 
-Demo Video on Youtube:https://www.youtube.com/watch?v=IdL-hjWad_I
+Demo Video on Youtube:[Azure DevOps Project 2 Huy](https://youtu.be/FflyY6L8Gzo)https://youtu.be/FflyY6L8Gzo
 
